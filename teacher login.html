@@ -31,15 +31,7 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-   
-   
-   <style>
-    .marginr_top100px{
-        margin-top: 250px;
-    }
-   </style>
-   
-    </head>
+   </head>
 <body>
 
     <!-- Navbar Section -->
@@ -64,6 +56,16 @@
                      <li class="nav-item">
                         <a class="nav-link" href="Contact.html">Contact Us</a>
                      </li>
+                     <li class="nav-item">
+                        <div class="dropdown">
+                           <a class=" dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> login</a>
+                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Student</a>
+                              <a class="dropdown-item" href="teacher login.html">Teacher</a>
+                              <a class="dropdown-item" href="#">Admine</a>
+                           </div>
+                        </div>
+                     </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
                      <div class="user_icon"><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></div>
@@ -78,57 +80,51 @@
       <!-- Our Teachers -->
       <div class="service_section layout_padding">
          <div class="container">
-            <h1 class="service_taital">Teacher Registration Form</h1>
+            <h1 class="service_taital">Teacher Login</h1>
             
          </div>
       </div>
 
-      <!-- Form -->
-       <div class="container marginr_top100px">
-    <form>
-      <div class="row mb-3">
-        <div class="col-md-6">
-          <label for="name" class="form-label">Full Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter full name" required>
+      <div class="container d-flex justify-content-center align-items-center vh-100 ">
+    <div class="card p-4 shadow" style="width: 100%; max-width: 400px; margin-top: 50px;">
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
         </div>
-        <div class="col-md-6">
-          <label for="email" class="form-label">Email Address</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
         </div>
-      </div>
-
-      <div class="row mb-3">
-        <div class="col-md-6">
-          <label for="subject" class="form-label">Subject Specialization</label>
-          <input type="text" class="form-control" id="subject" placeholder="e.g., Science" required>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary">Login</button>
         </div>
-        <div class="col-md-6">
-          <label for="phone" class="form-label">Phone Number</label>
-          <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" required>
+        <div class="text-center mt-3">
+          <a href="#">Forgot password?</a>
         </div>
-      </div>
-
-      <div class="row mb-4">
-        <div class="col-md-6">
-          <label for="password" class="form-label">Create Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+        <hr>
+        <div class="text-center">
+          <span>Don't have an account?</span>
+          <a href="teacher registration.html" class="btn btn-outline-secondary mt-2">Register</a>
         </div>
-        <div class="col-md-6">
-          <label for="confirmPassword" class="form-label">Confirm Password</label>
-          <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password" required>
-        </div>
-      </div>
-
-      <div class="text-center">
-        <button type="submit" class="btn btn-primary px-4">Register</button>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 
 
 
 
-    
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
      
     
 </body>
