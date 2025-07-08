@@ -239,14 +239,14 @@ button {
 .navbar-light .navbar-nav .nav-link.active, 
 .navbar-light .navbar-nav .nav-link.show, 
 .navbar-light .navbar-nav .show>.nav-link {
-    color: #fa7e64;
+    color: #167aa7;
 }
 .bg-light {
     background-color: transparent !important;
 }
 .navbar-light .navbar-nav .nav-link:focus, 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #fa7e64;
+    color: #167aa7;
 }
 
 .user_icon {
@@ -261,7 +261,7 @@ button {
 }
 
 .user_icon a:hover{
-    color: #fa7e64;
+    color: #167aa7;
 }
 
 .call_btn {
@@ -272,7 +272,7 @@ button {
     float: left;
     font-size: 16px;
     color: #ffffff;
-    background-color: #fa7e65;
+    background-color: #167aa7;
     border-radius: 40px;
     text-align: center;
     padding: 8px 20px;
@@ -280,7 +280,7 @@ button {
 
 .call_btn a:hover{
     color: #000;
-    background-color: #fa7e65;
+    background-color: #167aa7;
 }
 
 .padding_left10{
@@ -310,18 +310,18 @@ button {
     background-size: 100%;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 60%;
     right: 0px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .banner_taital {
     width: 100%;
-    font-size: 150px;
+    font-size:150px;
     color: #1c1b1b;
     text-transform: uppercase;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     padding-top: 80px;
 }
 
@@ -336,7 +336,7 @@ button {
     float: left;
     font-size: 16px;
     color: #ffffff;
-    background-color: #fa7f63;
+    background-color: #167aa7;
     text-align: center;
     border-radius: 40px;
     padding: 10px 0px;
@@ -356,7 +356,7 @@ button {
 }
 
 .carousel-indicators .active {
-    background-color: #fa7f63;
+    background-color: #167aa7;
 }
 /* banner section end */
 
@@ -365,7 +365,8 @@ button {
 .service_section {
     width: 100%;
     float: left;
-    background: linear-gradient(90deg, #fa7e64 10%, #ebab28 94%);
+    /* background: linear-gradient(90deg, #167aa7 10%, #16a7a2 94%); */
+    background: linear-gradient(45deg, #405DE6, #833AB4 ,  #E1306C);
     height: auto;
     padding-top: 50px;
     padding-bottom: 30px;
@@ -585,7 +586,7 @@ button.owl-next {
     color: #fefefd;
     text-align: center;
     text-transform: uppercase;
-    background: linear-gradient(90deg, #fa7e64 10%, #ebab28 94%);
+    background: linear-gradient(90deg, #167aa7 10%, #16a7a5 94%);
     height: auto;
     padding: 30px 0px 50px 0px;
     position: relative;
@@ -629,7 +630,7 @@ button.owl-next {
     width: 45px;
     height: 5px;
     border-radius: 100px;
-    background-color: #f47e60;
+    background-color: #167aa7;
     left: 0px;
     right: 0px;
     margin: 0 auto;
@@ -730,7 +731,7 @@ button.owl-next {
     width: 100%;
     float: left;
     font-size: 14px;
-    color: #f29448;
+    color: #167aa7;
     margin: 0px;
 }
 
@@ -826,7 +827,7 @@ button.owl-next {
     color: #ffffff;
     font-size: 16px;
     padding: 10px 0px;
-    background-color: #f8825f;
+    background-color: #167aa7;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 40px;
@@ -887,7 +888,7 @@ button.owl-next {
 }
 
 .location_main li a:hover {
-    color: #f8825f;
+    color: #167aa7;
 }
 
 
@@ -898,7 +899,7 @@ button.owl-next {
 .copyright_section {
     width: 100%;
     float: left;
-    background: linear-gradient(90deg, #fa7e64 10%, #ebab28 94%);
+    background: linear-gradient(90deg, #9116a7 10%, #eb2828 94%);
     height: auto;
 }
 
