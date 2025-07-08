@@ -310,18 +310,18 @@ button {
     background-size: 100%;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 60%;
     right: 0px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .banner_taital {
     width: 100%;
-    font-size: 150px;
+    font-size:150px;
     color: #1c1b1b;
     text-transform: uppercase;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     padding-top: 80px;
 }
 
@@ -365,7 +365,8 @@ button {
 .service_section {
     width: 100%;
     float: left;
-    background: linear-gradient(90deg, #167aa7 10%, #16a7a2 94%);
+    /* background: linear-gradient(90deg, #167aa7 10%, #16a7a2 94%); */
+    background: linear-gradient(45deg, #405DE6, #833AB4 ,  #E1306C);
     height: auto;
     padding-top: 50px;
     padding-bottom: 30px;
@@ -898,7 +899,7 @@ button.owl-next {
 .copyright_section {
     width: 100%;
     float: left;
-    background: linear-gradient(90deg, #fa7e64 10%, #ebab28 94%);
+    background: linear-gradient(90deg, #9116a7 10%, #eb2828 94%);
     height: auto;
 }
 
