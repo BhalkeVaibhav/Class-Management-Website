@@ -31,6 +31,226 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+      <style>
+/* form css */
+.animated-form {
+  animation: fadeInSlide 0.8s ease-out;
+}
+
+@keyframes fadeInSlide {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+  margin-top: 35px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 12px;
+  font-size: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: #fefefe;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.1);
+  outline: none;
+}
+
+/* Floating Label */
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: var(--gray);
+  font-size: 14px;
+  background: white;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: var(--primary);
+  background: #fff;
+}
+
+/* Smooth Button Animation */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: background 0.4s, transform 0.2s;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 74, 209, 0.509);
+  text-decoration-color: white;
+  transform: translateX(-100%);
+  transition: transform 0.4s;
+}
+
+.btn:hover::after {
+  transform: translateX(0);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+/* form css end */
+
+    :root {
+      --primary: #4361ee;
+      --secondary: #3f37c9;
+      --accent: #4cc9f0;
+      --light: #f8f9fa;
+      --dark: #212529;
+      --gray: #6c757d;
+      --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      --radius: 10px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #e4edf5);
+      color: var(--dark);
+      padding: 20px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    header, footer {
+      text-align: center;
+    }
+    header h1 {
+      color: var(--secondary);
+      font-size: 2rem;
+    }
+    .contact-area {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      flex: 1 1 350px;
+      background: #fff;
+      padding: 25px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .section-title {
+      font-size: 1.4rem;
+      color: var(--secondary);
+      margin-bottom: 15px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+    .info-item, .form-group {
+      margin-bottom: 15px;
+    }
+    .info-item i {
+      background: var(--primary);
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+    .info-item p, .form-group label {
+      margin: 5px 0;
+      color: var(--gray);
+    }
+    .social-links {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+    }
+    .social-links a {
+      background: #e9ecef;
+      color: var(--dark);
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+    .social-links a:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1.5px solid #ccc;
+      border-radius: var(--radius);
+      font-size: 14px;
+    }
+    textarea { resize: vertical; min-height: 100px; }
+    .btn {
+      padding: 12px 25px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+    .map {
+      height: 350px;
+      border: none;
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.6rem; }
+    }
+      </style>
+
    </head>
    <body>
       <!-- header section start -->
@@ -77,71 +297,82 @@
       </div>
       <!-- header section start -->
       <!-- contact section start -->
-      <div class="contact_section layout_padding">
-         <div class="container">
-            <h1 class="contact_taital">Get In Touch</h1>
-            <div class="contact_section_2">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <div class="contact_main layout_padding">
-                        <form action="/action_page.php">
-                           <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Name" name="Name">
-                           </div>
-                           <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Phone Number" name="Phone Number">
-                           </div>
-                           <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Email" name="Email">
-                           </div>
-                           <div class="form-group">
-                              <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
-                           </div>
-                        </form>
-                        <div class="send_bt"><a href="#">Send Now</a></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+       <div class="container">
+    <header>
+      <div class="logo"><i class="fas fa-graduation-cap fa-2x" style="color: var(--primary);"></i></div>
+      <h1>Class Portal</h1>
+      <p>Reach out to us with any questions or feedback.</p>
+    </header>
+
+    <!-- get in touch -->
+    <div class="contact-area">
+      <div class="card">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><p>Room 305, 123 University Ave</p><p>Boston, MA 02115</p></div></div>
+        <div class="info-item"><i class="fas fa-phone-alt"></i><div><p>Main: (617) 555-0123</p><p>Support: (617) 555-0456</p></div></div>
+        <div class="info-item"><i class="fas fa-envelope"></i><div><p>info@classportal.edu</p><p>support@classportal.edu</p></div></div>
+        <div class="info-item"><i class="fas fa-clock"></i><div><p>Mon-Fri: 8AM–6PM</p><p>Sat: 9AM–3PM | Sun: Closed</p></div></div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
       </div>
+
+
+
+      <!-- form section -->
+
+      <div class="card animated-form">
+  <h2 class="section-title">Send a Message</h2>
+  <form id="contactForm">
+    <div class="form-group">
+      <input type="text" id="name" required />
+      <label for="name">Your Name</label>
+    </div>
+    <div class="form-group">
+      <input type="email" id="email" required />
+      <label for="email">Email Address</label>
+    </div>
+    <div class="form-group">
+      <input type="text" id="subject" required />
+      <label for="subject">Subject</label>
+    </div>
+    <div class="form-group">
+      <textarea id="message" required></textarea>
+      <label for="message">Your Message</label>
+    </div>
+    <button type="submit" class="btn w-100"><i class="fas fa-paper-plane"></i> Send</button>
+  </form>
+</div>
+
+    </div>
+
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.689449366457!2d-71.09772582352759!3d42.34602667118541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a0e8c5535ef%3A0x813cd3575a5a4ab0!2sBoston%20University!5e0!3m2!1sen!2sus!4v1691872409645!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+
+    <footer>&copy; 2025 Class Portal | All Rights Reserved</footer>
+  </div>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const subject = document.getElementById("subject").value;
+      alert(`Thank you, ${name}! Your message regarding "${subject}" has been sent. We’ll reach out to ${email} soon.`);
+      this.reset();
+    });
+  </script>
+
       <!-- contact section end -->
-      <!-- footer section start -->
-      <div class="footer_section">
-         <div class="location_bg">
-            <div class="container">
-               <div class="location_main">
-                  <ul>
-                     <li>
-                        <a href="#"><img src="images/map-icon.png">
-                        <span class="padding_15">Location</span></a>
-                     </li>
-                     <li>
-                        <a href="#"><img src="images/call-icon.png">
-                        <span class="padding_15">Call +01 1234567890</span></a>
-                     </li>
-                     <li>
-                        <a href="#"><img src="images/mail-icon.png">
-                        <span class="padding_15">demo@gmail.com</span></a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <div class="map_main">
-            <div class="map-responsive">
-               <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-            </div>
-         </div>
-      </div>
+      
       <!-- footer section end -->
-      <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
             <p class="copyright_text">© 2020 All Rights Reserved.Design by <a href="https://html.design">Free html  Templates</a> Distribution by <a href="https://themewagon.com/">Themewagon</a></p>
          </div>
       </div>
-      <!-- copyright section end -->
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
@@ -153,30 +384,6 @@
       <script src="js/custom.js"></script>
       <!-- javascript --> 
       <script src="js/owl.carousel.js"></script>
-      <script>
-         $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:35,
-            nav:true,
-            center: true,
-            responsive:{
-             0:{
-                 items:1,
-                    margin:0
-                  },
-                575:{
-                    items:1,
-                    margin:0
-                },
-                768:{
-                    items:3,
-                    margin:0
-                },
-                1000:{
-                    items:3
-                }
-            }
-         })   
-      </script>   
+      
    </body>
 </html>
