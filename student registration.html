@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <!-- Basic Meta Tags -->
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <title>Student Login</title>
+   <title>Student Registration</title>
 
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -14,44 +13,33 @@
    <link rel="stylesheet" href="css/responsive.css">
    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap">
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/owl.carousel.min.css">
    <link rel="stylesheet" href="css/owl.theme.default.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
 
    <style>
       body {
-         background: linear-gradient(to right, #e0eafc, #cfdef3);
+         background: linear-gradient(to right, #f0f8ff, #dff0ff);
          font-family: 'Poppins', sans-serif;
       }
-
-      .login-card {
-         transition: transform 0.5s, box-shadow 0.3s;
-         border-radius: 12px;
+      .marginr_top100px {
+         margin-top: 80px;
+         margin-bottom: 80px;
       }
-
-      .login-card:hover {
-         transform: translateY(-20px);
-         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      }
-
       .form-control:focus {
          border-color: #007bff;
-         box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+         box-shadow: 0 0 0 0.15rem rgba(0, 123, 255, 0.3);
       }
-
+      .btn-primary {
+         background-color: #007bff;
+         border: none;
+         transition: all 0.3s ease-in-out;
+      }
       .btn-primary:hover {
          background-color: #0056b3;
          transform: scale(1.03);
-         transition: all 0.2s ease-in-out;
       }
-
-      .btn-outline-secondary:hover {
-         background-color: #6c757d;
-         color: #fff;
-         transform: scale(1.03);
-      }
-
       .form-label {
          font-weight: 500;
       }
@@ -90,7 +78,7 @@
                   <a href="#"><i class="fa fa-search mx-2"></i></a>
                </form>
                <div class="call_btn">
-                  <a href="#"><i class="fa fa-phone"></i><span class="padding_left10">Call : +1234567890</span></a>
+                  <a href="#"><i class="fa fa-phone"></i><span class="padding_left10">Call : +7666168187</span></a>
                </div>
             </div>
          </nav>
@@ -100,42 +88,81 @@
    <!-- Page Title -->
    <div class="service_section layout_padding">
       <div class="container">
-         <h1 class="service_taital text-center">Student Login</h1>
+         <h1 class="service_taital text-center">Student Registration Form</h1>
       </div>
    </div>
 
-   <!-- Student Login Form -->
-   <div class="container d-flex justify-content-center align-items-center mb-5">
-      <div class="card login-card p-4 shadow" style="width: 100%; max-width: 420px; margin-top: 20px;">
-         <form>
-            <div class="mb-3">
-               <label for="username" class="form-label">Username</label>
-               <input type="username" class="form-control" id="username" placeholder="Enter  username" required>
+   <!-- Form Section -->
+   <div class="container marginr_top100px">
+      <form>
+         <div class="row mb-3">
+            <div class="col-md-6">
+               <label class="form-label">Full Name</label>
+               <input type="text" class="form-control" placeholder="Enter your full name" required>
             </div>
-            <div class="mb-3">
-               <label for="password" class="form-label">Password</label>
-               <input type="password" class="form-control" id="password" placeholder="Enter  password" required>
+            <div class="col-md-6">
+               <label class="form-label">Email Address</label>
+               <input type="email" class="form-control" placeholder="Enter your email" required>
             </div>
-             <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="rememberMe">
-            <label class="form-check-label" for="rememberMe">Remember me</label>
+         </div>
+
+         <div class="row mb-3">
+            <div class="col-md-6">
+               <label class="form-label">Roll Number</label>
+               <input type="text" class="form-control" placeholder="Enter roll number" required>
             </div>
-            <div class="d-grid mb-3">
-               <button type="submit" class="btn btn-primary">Login</button>
+            <!-- <div class="col-md-6">
+               <label class="form-label">Class</label>
+               <select class="form-control" required>
+                  <option selected disabled>Choose class</option>
+                  <option>Class 10</option>
+                  <option>Class 11</option>
+                  <option>Class 12</option>
+               </select>    
+            </div> -->
+
+            <div class="col-md-6">
+                <label for="standard" class="form-label">Student class</label>
+                <input type="number" class="form-control" id="number" placeholder="Enter class" required>
             </div>
-            <div class="text-center mb-2">
-               <a href="#">Forgot password?</a>
+         </div>
+
+         <div class="row mb-3">
+            <div class="col-md-6">
+               <label class="form-label">Gender</label><br>
+               <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gender" value="male" required>
+                  <label class="form-check-label">Male</label>
+               </div>
+               <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gender" value="female" required>
+                  <label class="form-check-label">Female</label>
+               </div>
             </div>
-            <hr>
-            <div class="text-center">
-               <span>Don't have an account?</span><br>
-               <a href="student registration.html" class="btn btn-outline-primary mt-2">Register</a>
+            <div class="col-md-6">
+               <label class="form-label">Phone Number</label>
+               <input type="tel" class="form-control" placeholder="Enter phone number" required>
             </div>
-         </form>
-      </div>
+         </div>
+
+         <div class="row mb-4">
+            <div class="col-md-6">
+               <label class="form-label">Create Password</label>
+               <input type="password" class="form-control" placeholder="Create password" required>
+            </div>
+            <div class="col-md-6">
+               <label class="form-label">Confirm Password</label>
+               <input type="password" class="form-control" placeholder="Confirm password" required>
+            </div>
+         </div>
+
+         <div class="text-center">
+            <button type="submit" class="btn btn-primary px-5">Register</button>
+         </div>
+      </form>
    </div>
 
-   <!-- JavaScript Files -->
+   <!-- Scripts -->
    <script src="js/jquery.min.js"></script>
    <script src="js/popper.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
