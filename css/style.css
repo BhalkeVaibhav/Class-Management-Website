@@ -239,7 +239,7 @@ button {
 .navbar-light .navbar-nav .nav-link.active, 
 .navbar-light .navbar-nav .nav-link.show, 
 .navbar-light .navbar-nav .show>.nav-link {
-    color: #167aa7;
+    color:#167aa7;
 }
 .bg-light {
     background-color: transparent !important;
@@ -860,7 +860,7 @@ button.owl-next {
     width: 100%;
     float: left;
     background-color: #393939;
-    height: auto;
+    height:auto;
 }
 
 .location_main {
